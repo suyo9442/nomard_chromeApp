@@ -4,34 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Momentum</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Momentum App</title>
   </head>
   <body>
-    <script src="./app.js"></script>
+    <form id="login-form" class="hidden">
+      <input 
+        required
+        maxlength="15"
+        type="text" 
+        placeholder="What is your name?"
+      />
+      <button>Log In</button>
+    </form>
 
-    <script>
-       var arr = new Array('seoul','new york','ladarkh','pusan', 'Tsukuba');
-    //    function getRandomValueFromArray(arr) {
-    //        var index = Math.floor(arr.length * Math.random());
-           
-    //        return arr[index];
-    //     }
-    //     console.log(getRandomValueFromArray(arr))
+    <h2 id="greeing" class="hidden">
 
+    <h2 id="clock">
 
-        // 자바스크립트의 모든 요소는 객체입니다 👉 Array
-        // Array 객체의 프로퍼티에 접근 👉 prototype
-        // Array 객체의 메소드를 추가 👉 random
-        // this는 곧 해당 배열을 뜻합니다
-        Array.prototype.random = function() {
-            var index = Math.floor(this.length * Math.random());
+    <h2 class="quote"></h2>
+    <h2 class="author"></h2>
 
-            return this[index];
-        }
-        console.log(arr.random())
+    
 
 
-    </script>
+    
+    <script src="./js/greetings.js"></script>
+    <script src="./js/quotes.js"></script>
+    <script src="./js/clock.js"></script>
   </body>
 </html>
